@@ -1,51 +1,80 @@
-<!--Creare una struttura HTML-Javascript come descritto:
-- Un campo input di tipo number con valore default 0
-- 3 bottoni sottostanti
-Cliccando sul primo bottone, il valore nel campo aumenta di 1, cliccando sul
-secondo diminuisce di 1, cliccando sul terzo il campo viene resettato a 0.-->
+<!--Realizzare una struttura come in figura utilizzando il grid system di
+Bootstrap con le seguenti condizioni:
+- Sezione 1 con testo a piacere “Lorem Ipsum”
+- Sezione 2 con immagine
+- Sezione 3 con testo a piacere
+
+In modalità mobile le 3 sezioni verranno visualizzate una sotto l’altra nel
+seguente ordine (1, 2, 3)
+In modalità tablet e pc le 3 sezioni verranno visualizzate una a fianco all’altra
+con i seguenti dimensionamenti:
+- Sezione 1 e 3 occupano il 25% della pagina ciascuna
+- Sezione 2 occupa il 50% della pagina
+
+Fare in modo che quando il mouse passa (hover) sulle sezioni 1 e 2 il testo
+contenuto diventi di colore rosso.-->
 
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>S.3 D.3 - Esercizio 6</title>
+  <head>
+    <title>Esercizio 1</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link rel="stylesheet" href="css/style.css" />
-</head>
+  </head>
 
-<body>
-    <header>
-    </header>
+  <body>
+    <header></header>
     <main>
-        <div class="container-fluid mt-5">
-            <div class="row">
-                <div class="col-4">
-                    <input id="txtNumber" class="form-control" type="number" min="0" max="999" value="0">                    
-                </div>
-                <div class="col-12">
-                    <button id="btnIncrement" class="btn btn-success">Aggiungi ciao</button>
-                    <button id="btnDecrement" class="btn btn-danger">Togli</button>
-                    <button id="btnReset" class="btn btn-secondary">Resetta</button>
-                </div>
-            </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-3 " id="div">
+           <p class="odd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            facere doloremque, quam sed, recusandae nihil ab temporibus
+            molestiae ipsa aperiam hic tempore eos fuga laborum quod quaerat
+            sint quisquam delectus pariatur corrupti magni dignissimos eaque.
+            Dignissimos ipsum non accusamus sunt repudiandae, quisquam explicabo
+            veritatis soluta excepturi asperiores reprehenderit totam quibusdam?</p>
+          </div>
+          <div class="col-6"><img src="./image/download.jfif" alt="Immagine sole" class="image"></div>
+          <div class="col-3 " id="div"><p class="odd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            facere doloremque, quam sed, recusandae nihil ab temporibus
+            molestiae ipsa aperiam hic tempore eos fuga laborum quod quaerat
+            sint quisquam delectus pariatur corrupti magni dignissimos eaque.
+            Dignissimos ipsum non accusamus sunt repudiandae, quisquam explicabo
+            veritatis soluta excepturi asperiores reprehenderit totam quibusdam?</p></div>
         </div>
+      </div>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-        crossorigin="anonymous"></script>
-    <script src="scripts/scripts.js"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/script.js"></script>
+  </body>
 </html>
