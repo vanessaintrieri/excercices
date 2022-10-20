@@ -1,6 +1,8 @@
 "use strict";
 
-function fromJsonToObject() {
+function fromJsonToObject(json) {
    
-JSON.parse('{ "user": "logged", "info": { "os": "osx", "ip": "127.0.0.1", "gender": "f"} }');
+JSON.parse(json);
 }
+
+console.log(fromJsonToObject('{ "user": "logged", "info": { "os": "osx", "ip": "127.0.0.1", "gender": "f"} }'));
