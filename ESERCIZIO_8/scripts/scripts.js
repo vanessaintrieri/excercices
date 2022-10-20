@@ -1,5 +1,3 @@
-
-
 "use strict"
 
 function getRandomInt(min, max) {
@@ -16,28 +14,21 @@ function applyRandomBg() {
     
     switch (randomNum) {
         case 1:
-            bodyContainer.setAttribute("class", "square-200 bg-primary")
+            bodyContainer.setAttribute("class", "bg-primary")
             break;
         case 2:
-            bodyContainer.setAttribute("class", "square-200 bg-success")
+            bodyContainer.setAttribute("class", "bg-success")
             break;
         case 3:
-            bodyContainer.setAttribute("class", "square-200 bg-warning")
+            bodyContainer.setAttribute("class", "bg-warning")
             break;
         case 4:
-            bodyContainer.setAttribute("class", "square-200 bg-danger")
+            bodyContainer.setAttribute("class", "bg-danger")
             break;
        
     }
-    document.querySelectorAll('#bodyContainer')
-    .forEach(e => e.addEventListener("mouseover", function (applyRandomBg) {
-        
-    }));
-    document.querySelectorAll('#bodyContainer')
-    .forEach(e => e.addEventListener("mouseout", function (applyRandomBg) {
-       
-    }));
-
-
 }
 
+window.addEventListener("load", () => {
+        setInterval(applyRandomBg, 5000);
+})
