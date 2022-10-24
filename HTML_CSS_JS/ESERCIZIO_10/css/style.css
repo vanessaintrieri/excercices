@@ -1,0 +1,12 @@
+/* 
+P discendente diretto di form 
+*/
+form > p {
+    font-size: 3rem;
+}
+/* 
+.form-control è uno dei discendenti di form anche in un livello più basso
+*/
+form .form-control {
+    background-color: lightgray;
+}
