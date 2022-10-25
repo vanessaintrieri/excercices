@@ -1,8 +1,11 @@
 import '../css/style.scss';
+import BasicNavbar from './header/BasicNavbar';
 
 function App() {
   return (
-    <h1>Hello world</h1>
+   <header>
+    <BasicNavbar></BasicNavbar>
+   </header>
   );
 }
 
