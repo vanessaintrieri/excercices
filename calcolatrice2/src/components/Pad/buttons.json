@@ -1,0 +1,98 @@
+[
+    {
+        "value": "C",
+        "isOperation": true,
+        "order": 1
+    },
+    {
+        "value": "+/-",
+        "isOperation": true,
+        "order": 2
+    },
+    {
+        "value": "%",
+        "isOperation": true,
+        "order": 3
+    },
+    {
+        "value": "/",
+        "isOperation": true,
+        "order": 4
+    },
+    {
+        "value": "*",
+        "isOperation": true,
+        "order": 8
+    },
+    {
+        "value": "-",
+        "isOperation": true,
+        "order": 12
+    },
+    {
+        "value": "+",
+        "isOperation": true,
+        "order": 16
+    },
+    {
+        "value": "=",
+        "isOperation": true,
+        "order": 19
+    },
+    {
+        "value": 1,
+        "isOperation": false,
+        "order": 13
+    },
+    {
+        "value": 2,
+        "isOperation": false,
+        "order": 14
+    },
+    {
+        "value": 3,
+        "isOperation": false,
+        "order": 15
+    },
+    {
+        "value": 4,
+        "isOperation": false,
+        "order": 9
+    },
+    {
+        "value": 5,
+        "isOperation": false,
+        "order": 10
+    },
+    {
+        "value": 6,
+        "isOperation": false,
+        "order": 11
+    },
+    {
+        "value": 7,
+        "isOperation": false,
+        "order": 5
+    },
+    {
+        "value": 8,
+        "isOperation": false,
+        "order": 6
+    },
+    {
+        "value": 9,
+        "isOperation": false,
+        "order": 7
+    }
+    ,
+    {
+        "value": 0,
+        "isOperation": false,
+        "order": 17
+    },
+    {
+        "value": ".",
+        "isOperation": false,
+        "order": 18
+    }
+]
