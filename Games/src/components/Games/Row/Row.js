@@ -29,7 +29,9 @@ const Row = ({ data: { id = 0, name = "", publisher = "", imageUrl = "", categor
                 <div className="container-fluid border-dark py-2 my-2 my-md-0 bg-white v-card">
                     <div className="row">
                         <div className="col-12 mb-3 text-center">
-                            <img src={imageUrl} alt="Copertina" />
+                            <div className="v-card_img">
+                              <img src={imageUrl} alt="Copertina" />
+                            </div>                         
                         </div>
                         <div className="col-12 ">
                             <div className="row text-md-center">
